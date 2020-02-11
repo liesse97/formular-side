@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width: 650px;
+    margin: 50px auto;
+    background:grey;
+    border: 5px solid black;
+  }
+    nav{
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      cursor: pointer;
+      color:#fff;
+      
+    }
+    
+    .active{
+      background-color: rgb(52, 83, 221);
+      font-size:22px;
+      
+    }
+    nav a{
+      text-decoration: none;
+      color:#fff;
+      font-size: 22px;
+      padding:20px;
+      text-align:center;
+    }
+    nav a:hover{
+      background-color: black;
+    }
+    @media(max-width:600px){
+      .other{
+        flex-direction:column;
+        align-items:center;
+      }
+
+    }
+
+  
+h1{
+    text-align:center;
+    color:black;
+    font-size:30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 40px;
+
+}
+h2{
+     font-size:30px;
+    margin-bottom:25px;
+    color:#fff;
+    text-align: center;
+}
+
+ .input-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+} 
+
+ input{
+    border:0; 
+   padding:5px 10px;
+   height: 60px;
+   
+
+}
+
+input.valid{
+    color: green;
+    border:3px solid green;
+    background-color: lightgreen;
+}
+input.invalid{
+border: 3px solid red;
+color:red;
+}
+
+textarea{
+    padding: 20px 20px;
+    height:100px;
+    margin-top:15px;
+    
+
+}
+button{
+    padding:10px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+button:hover{
+    background:pink;
+    color:darkgreen;
+    border:3px solid black;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: rgba(209, 195, 199, 0.966);
+    margin-bottom: 30px;
+    justify-content: space-around;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.fab:hover{
+color:#fff;
+
+} 
+
+
+
